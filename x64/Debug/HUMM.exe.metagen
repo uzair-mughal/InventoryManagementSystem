@@ -1,0 +1,135 @@
+  HUMM.Page1_LOGIN.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page2_SignUp.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page3_MainMenu.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page4_Products.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page_AddOrder.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page_Customer.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page_Customer_Info.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page_Reports.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page_Setting_ChangePass.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page_Setting_DeleteUser.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page_Setting_Main.resources - Embedded, ContainedInManifestFile, 
+  HUMM.Page_Vendor.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly HUMM, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class HUMM.Page4_Products: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Form, Vendor*, Inventory*, User*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form obj : Public
+    User* u : Public
+    Inventory* invptr : Public
+    Vendor* vend : Public
+  Methods:
+    empty(): PrivateScope, Public, HideBySig
+    loadprod(): PrivateScope, Public, HideBySig
+Class HUMM.Page_Setting_ChangePass: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, User*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form obj : Public
+Class HUMM.Page_Setting_DeleteUser: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, User*, System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form obj_Back : Public
+    User* u : Public
+    System.Windows.Forms.Form sp : Public
+Class HUMM.Page_Setting_Main: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Form, User*, System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form obj : Public
+    System.Windows.Forms.Form sp : Public
+    User* u : Public
+Class HUMM.Page_AddOrder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, Inventory*, Customers*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form obj : Public
+    Inventory* inv : Public
+    Customers* customer : Public
+    Int32 number : Public
+  Methods:
+    loadinventory(): PrivateScope, Public, HideBySig
+    loadorders(): PrivateScope, Public, HideBySig
+Class HUMM.Page_Customer_Info: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, Inventory*, Customers*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Inventory* inv : Public
+    Customers* customer : Public
+    System.Windows.Forms.Form obj : Public
+Class HUMM.Page_Customer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, Inventory*, Customers*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form obj : Public
+    Inventory* inv : Public
+    Customers* customer : Public
+  Methods:
+    loadorders(): PrivateScope, Public, HideBySig
+Class HUMM.Page_Vendor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, Vendor*, User*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form obj : Public
+    Vendor* vend : Public
+    User* u : Public
+  Methods:
+    load_vendor(): PrivateScope, Public, HideBySig
+    empty(): PrivateScope, Public, HideBySig
+Class HUMM.Page_Reports: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, Vendor*, Customers*, Inventory*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form obj : Public
+    Vendor* vend : Public
+    Customers* cust : Public
+    Inventory* invptr : Public
+Class HUMM.Page3_MainMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Form, User*, Inventory*, Customers*, Vendor*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form Obj : Public
+    Customers* customer : Public
+    User* u : Public
+    Inventory* inv : Public
+    Vendor* vend : Public
+Class HUMM.Page2_SignUp: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form obj : Public
+Class HUMM.Page1_LOGIN: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form obj : Public
+    User* u : Public
+    Inventory* inv : Public
+    Customers* customer : Public
+    Vendor* vend : Public
